@@ -1,0 +1,73 @@
+{
+  "name": "@orchestra/orxapi-builder",
+  "version": "0.0.3",
+  "author": {
+    "name": "richard.koehl@orchestra.eu"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "echo \"App running\" && exit 0",
+    "build": "tsc -p .",
+    "build:declaration": "rm -rf dist/dec && tsc --outDir dist/dec && rm -rf dist/dec/*.js*",
+    "test": "mocha --reporter spec",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:orchestra-ts/orxapi-builder.git"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "javascript",
+    "fuse-box"
+  ],
+  "license": "ISC",
+  "engines": {
+    "node": "~10.14.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "bourbon": "^5.1.0",
+    "chai": "^4.2.0",
+    "color": "^3.1.0",
+    "commander": "^2.19.0",
+    "dateformat": "^3.0.3",
+    "ejs": "^2.6.1",
+    "fuse-box": "^3.5.0",
+    "fuse-test-runner": "^1.0.16",
+    "fuse-tools": "^1.0.5",
+    "husky": "^1.1.3",
+    "jquery": "^3.3.1",
+    "jquery-selector-cache": "^1.0.2",
+    "lodash": "^4.17.11",
+    "mermaid": "^8.0.0-rc.8",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "react-devtools": "^3.4.2",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.4.1",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "npm-watch": "^0.5.0",
+    "uglify-es": "^3.3.9"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts"
+    }
+  }
+}
